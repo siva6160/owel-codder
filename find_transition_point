@@ -1,0 +1,12 @@
+a=[int(i) for i in input().split()]
+l=0
+h=len(a)-1
+while l<=h:
+    m=(l+h)>>1
+    if a[m]==1 and a[m-1]==0 and m>0 or m==0:
+        print(m)
+        break
+    elif a[m]<1:
+        l=m-1
+    else:
+        h=m+1
