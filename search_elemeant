@@ -1,0 +1,5 @@
+  for i in range(len(arr)):
+            if arr[i]==X:
+                return arr.index(arr[i])
+        else:
+            return -1
