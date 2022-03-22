@@ -1,0 +1,20 @@
+#gcd of number
+"""a,b=map(int,input().split())
+c=min(a,b)
+while c>0:
+    if a%c==0 and b%c==0:
+        print(c)
+        break
+    c+=1
+"""
+##using functions
+"""def siva(a,b,c):
+    while c>0:
+        if a%c==0 and b%c==0:
+            return c
+            break
+        c+=1
+a,b=map(int,input().split())
+c=min(a,b)
+#d=siva(a,b,c)
+print(siva(a,b,c))"""
