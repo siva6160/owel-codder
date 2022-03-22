@@ -1,0 +1,21 @@
+##with out using math function
+def gcd(x,y):
+  while y:
+    x,y=y,x%y
+   return x
+l=[int(i) for i in input(),split()]
+n1=l[0]
+n2=l[1]
+g=gcd(n1,n2)
+for in in range(2,len(x)):
+  g=gcd(g,l[i])
+print(g)
+#####  using math funtion
+import math
+arr=[int(i) for i in input().split()]
+res=ar[0]
+for i in range(len(1)):
+  res=math.gcd(g,l[i])
+ print(res)
+
+  
