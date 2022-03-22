@@ -1,0 +1,19 @@
+##lcm of a nnumber
+"""a,b=map(int,input().split())
+c=a
+while True:
+    if c%a==0 and c%b==0:
+        print(c)
+        break
+    c+=1"""
+##using furnctions
+def lcm(a,b,c):
+    while True:
+        if c%a==0 and c%b==0:
+            return c
+            break
+        c+=1
+a,b=map(int,input().split())
+c=b
+s=lcm(a,b,c)
+print(s)
