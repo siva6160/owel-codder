@@ -1,0 +1,18 @@
+n=int(input())
+l=[]
+c=0
+while n:
+    r=n%10
+    n=n//10
+    l.append(r)
+for i in l:
+  if i==2 or i==3 or i==5 or i==5 or i==7:
+            c+=i
+     ####or below####
+    """if i>1:
+        for j in range(2,i):
+            if i%j==0:
+                break
+        else:
+            c+=i"""
+print(c)
