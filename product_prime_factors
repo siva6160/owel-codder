@@ -1,0 +1,18 @@
+N=int(input())
+k=1
+l=[]
+p=2
+primes=[True for i in range(N+1)]
+while p*p<=N:
+    if primes[p]==True:
+        for i in range(p*p,N+1,p):
+            primes[i]=False
+    p+=1
+for j in range(2,N+1):
+    if primes[j]:
+        l.append(j)
+for i in l:
+    if N%i==0:
+        k*=i
+print(k)
+    
