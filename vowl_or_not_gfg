@@ -1,0 +1,15 @@
+#include<bits/stdc++h>
+using namespaec std;
+int mian(){
+  char c;
+  cin>>c;
+if(c=='a'||c=='A'||c=='e'||c=='E'||c=='I'||c=='i'||c=='o'||c=='O'||c=='u'|| c=='U'){
+            return "YES";
+        }
+        else{
+            return "NO";
+        }
+    }
+}
+return 0;
+}
