@@ -1,0 +1,85 @@
+//even or of a number
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    if (n%2==0){
+        std::cout << "even" << std::endl;
+    }
+    else{
+        cout<<"odd";
+    }
+}
+//cout of even numbers with in a range
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    int c=0;
+    for(int i=1;i<=n;i++){
+        if (i%2==0){
+            c+=1;
+            //<<i;
+            
+        }
+    }
+    std::cout << c << std::endl;
+}
+//sum of even numbers with in a range
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    int c=0;
+    for(int i=1;i<=n;i++){
+        if (i%2==0){
+            c+=i;
+            //<<i;
+            
+        }
+    }
+    std::cout << c << std::endl;
+}
+//sum of odd numbers in the givn numbrer range
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    int c=0;
+    for(int i=1;i<=n;i++){
+        if (i%2==0){
+            //c+=i;
+            //<<i;
+            continue;
+            
+        }
+        else{
+        c+=i;
+    }
+    }
+    std::cout << c << std::endl;
+}
+//len of odd elemansts in the range
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    int c=0;
+    for(int i=1;i<=n;i++){
+        if (i%2==0){
+            //c+=i;
+            //<<i;
+            continue;
+            
+        }
+        else{
+        c+=1;
+    }
+    }
+    std::cout << c << std::endl;
+}
