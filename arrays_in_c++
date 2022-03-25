@@ -1,0 +1,47 @@
+// TRAVELLSING OF AN ARRAY
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++){
+       cin >> arr[i];
+    }
+    for (int i=0;i<n;i++){
+       cout << arr[i] << std::endl;
+    }
+return 0;
+}
+//LEANGTH OF AN ARRAY
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++){
+       cin >> arr[i];
+    }
+    for (int i=0;i<n;i++){
+       cout << arr[i] << std::endl;
+    }
+return 0;
+}
+//SUM OF AN ARRY
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    int arr[n];
+    int c=0;
+    for (int i=0 ;i<n;i++){
+        cin>>arr[i];
+
+    }
+    for(int i=0;i<n;i++){
+        c+=arr[i];
+    }
+    std::cout << c << std::endl;
+}
