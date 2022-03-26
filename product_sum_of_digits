@@ -1,0 +1,25 @@
+class Solution:
+    def subtractProductAndSum(self, n: int) -> int:
+        sum=0
+        rev=1
+        while n>0:
+            r=n%10
+            n=n//10
+            sum=sum+r
+            rev*=r
+        return rev-sum
+//cpp
+class Solution {
+public:
+    int subtractProductAndSum(int n) {
+        int sum=0;
+        int rev=1;
+        while(n>0){
+            int r=n%10;
+            n=n/10;
+            sum+=r;
+            rev*=r;
+        }
+        return rev-sum;
+    }
+};
