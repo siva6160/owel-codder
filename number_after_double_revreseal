@@ -1,0 +1,38 @@
+class Solution:
+    def isSameAfterReversals(self, num: int) -> bool:
+        temp=num
+        rev=0
+        re=0
+        while num>0:
+            r=num%10
+            rev=rev*10+r
+            num=num//10
+        while rev>0:
+            r1=rev%10
+            re=re*10+r1
+            rev=rev//10
+        if temp==re:
+            return True
+        else:
+            return False
+            
+  //cpp
+  class Solution {
+public:
+    bool isSameAfterReversals(int num) {
+        int temp=num;
+        int re=0;
+        int rev=0;
+        while(num>0){
+            int r=num%10;
+            rev=rev*10+r;
+            num=num/10;
+        }
+        while(rev>0){
+            int r1=rev%10;
+            re=re*10+r1;
+            rev=rev/10;
+        }
+        return(re==temp);
+    }
+};
