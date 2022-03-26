@@ -1,0 +1,25 @@
+//in cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int x;
+	cin>>x;
+	if((x+7)>170){
+	    std::cout << "YES" << std::endl;
+	}
+	else{
+	    cout<<"NO";
+	}
+	return 0;
+}
+//python
+def isiq(x):
+    if (x+7)>170:
+        return "YES"
+    else:
+        return "NO"
+x=int(input())
+s=isiq(x)
+print(s)
