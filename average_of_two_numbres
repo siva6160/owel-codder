@@ -8,3 +8,11 @@ int main(){
     
     
 }
+//division of two numbers
+#include<stdio.h>
+int main(){
+    int a,b;
+    scanf("%d \n %d",&a,&b);
+    int c=a/b;
+    printf("%d",c);
+}
