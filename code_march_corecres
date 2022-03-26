@@ -1,0 +1,44 @@
+t=int(input())
+for i in range(t):
+    a,b,x,y=map(int,input().split())
+    if (a!=x and a!=y) and(b!=x and b!=y):
+        print(2)
+    elif (a==x or a==y )and (b==x or b==y):
+        print(0)
+    else:
+        print(1)
+ #using functions
+ def satya(a,b,x,y):
+    if (a!=x and a!=y) and(b!=x and b!=y):
+        return 2
+    elif (a==x or a==y )and (b==x or b==y):
+        return 0
+    else:
+        return 1
+t=int(input())
+for i in range(t):
+    a,b,x,y=map(int,input().split())
+    print(satya(a,b,x,y))
+//uisng cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	for(int i=0; i<t;i++){
+	int a,b,x,y;
+	cin>>a>>b>>x>>y;
+	 if ((a!=x && a!=y) && (b!=x && b!=y)){
+        std::cout << 2 << std::endl;
+	 }
+    else if ((a==x || a==y ) && (b==x || b==y)){
+        cout<<0<<endl;
+    }
+    else{
+        cout<<1<<endl;
+    }
+	}
+return 0;
+}
