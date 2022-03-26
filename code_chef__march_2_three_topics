@@ -1,0 +1,8 @@
+def threetopics(a,b,c,x):
+    if(a==x or b==x or c==x):
+        return "YES"
+    else:
+        return "NO"
+a,b,c,x=map(int,input().split())
+s=threetopics(a,b,c,x)
+print(s)
