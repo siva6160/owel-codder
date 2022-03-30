@@ -1,0 +1,16 @@
+n=int(input())
+q=int(input())
+for i in range(q):
+    c=0
+    l,r=map(int,input().split())
+    primes=[True for i in range(r+1)]
+    p=2
+    while p*p<=r:
+        if primes[p]==True:
+            for j in range(p*p,r+1,p):
+                primes[j]=False
+        p+=1
+    for k in range(l,r+1):
+        if primes[k]:
+            c+=1
+    print(c)
