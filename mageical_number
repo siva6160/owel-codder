@@ -1,0 +1,12 @@
+  l=0
+    h=len(arr)-1
+    while l<=h:
+        m=(l+h)//2
+        if arr[m]==m:
+            return m
+        elif arr[m]>m:
+            h=m-1
+        else:
+            l=m+1
+    return -1
+ https://practice.geeksforgeeks.org/problems/magical-number-1587115620/1/?page=2&category[]=Binary%20Search&sortBy=submissions#
