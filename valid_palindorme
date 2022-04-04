@@ -1,0 +1,20 @@
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        d=s.lower()
+        l=[]
+        for i in d:
+            if i.isalnum():
+                l.append(i)
+        print(l)
+        n=len(l)
+        i=0;
+        j=n-1
+        while i<=j:
+            if l[i]!=l[j]:
+                return False
+            i+=1
+            j-=1
+        return True
+                
+        
+                
