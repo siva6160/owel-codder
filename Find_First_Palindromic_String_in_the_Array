@@ -1,0 +1,19 @@
+class Solution:
+    def firstPalindrome(self, words: List[str]) -> str:
+        l=[]
+        for k  in words:
+            i=0
+            c=0
+            j=len(k)-1
+            #print(k)
+            while i<j:
+                if k[i]!=k[j]:
+                    c+=1
+                i+=1
+                j-=1
+            if c==0:
+                l.append(k)
+        if len(l)==0:
+            return ""
+        return l[0]
+            
