@@ -1,0 +1,42 @@
+bool is_anagram(int frqp[],int frqw[]){
+    for(int i=0;i<26;i++){
+        if (frqp[i]!=frqw[i]){
+            return false;
+            
+        }
+        
+    }
+    return true;
+}
+class Solution {
+public:
+    vector<int> findAnagrams(string s, string p) {
+        int frqp[26]={0};
+        int frqw[26]={0};
+        int n=p.size();
+        int m=s.size();
+        vector<int>ans;
+
+        if(m<n) return ans;
+        for(int i=0;i<n;i++){
+            frqp[p[i]-'a']+=1;
+            frqw[s[i]-'a']+=1;
+        }
+        int left=0;
+        int right=n;
+        while (right<=m){
+            if(is_anagram(frqp,frqw)){
+                ans.push_back(left);
+                
+            }
+            frqw[s[left]-'a']-=1;
+            if(right<m){
+                frqw[s[right]-'a']+=1;
+            }
+            left++;
+            right++;
+        }
+         return ans;
+    }
+   
+};
